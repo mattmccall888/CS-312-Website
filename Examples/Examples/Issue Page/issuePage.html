@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta http-equiv ="content-type" content ="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="issuePage_CSS.css" />
+
+    <title> Issue </title>
+</head>
+
+<!-- Creating a webform that takes user data: -->
+<form>
+<div>
+    <table> <!-- Create a table -->
+        <tr> <!-- insert row 1 -->
+        <th colspan = "2"> <h1>Issue Report:</h1></th>  <!-- Define table header -->
+        </tr>
+        <tr> <!-- insert new row and data for column 1 and column2 -->
+            <td>Name:</td>
+            <td><input type = "text" id = "username" name = "username"  > </td> 
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type = "text" id = "email" name = "email"  > </td>
+            </span>
+        </tr>
+        <tr>
+            <td>Date(mm/dd/yyyy):</td>
+            <td><input type = "text" id = "sub_date" name = "sub_date"  > </td>
+            </span>
+        </tr>
+        <tr>
+            <td>Please desribe your issue: </td>
+            <!-- Use textarea for longer text input or simply use "input type = 'text'" -->
+            <td><textarea id ="issue_desc" name = "issue_desc" rows = "5" columns = "100" maxlength="100"></textarea> </td>
+        </tr>
+</table>
+<br><br>
+    <!-- Create buttons -->
+<input type= "reset" value = "Cancel" class="button"> &nbsp
+<input type = "submit" value = "Submit" class = "button"> &nbsp
+</div>
+</form>
+
+</html>
